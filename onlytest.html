@@ -6,39 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+        }
+        ul{
+            padding: 25px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            padding: 0 20px;
+            
+        }
+        .left{
+            background-color: orchid;
+            height: 80vh;
+            width: 25vw;
+            /* float: left; */
+        }
+        .right{
+            background-color: aquamarine;
+            height: 80vh;
+            width: 25vw;
+            /* float: right; */
+        }
         .container{
             display: flex;
-            flex-direction:row;
-            /* flex-wrap: wrap;  */
-            justify-content: center;
-            background-color: aquamarine;
-            height: 100vh;
-            align-items:center;
-            align-content: center;
-        }
-        .box1{
-            height: 200px;
-            width: 300px;
-            background-color: blue;
-            border: 2px solid black;
-            order: 4;
-            /* align-self: flex-start; */
-            /* align-self: flex-start; */
-        }
-        .box2{
-            height: 200px;
-            width: 300px;
-            background-color: red;
-            border: 2px solid black;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box1">Box1</div>
-        <div class="box2">Box2</div>
-        <div class="box2">Box2b</div>
-        <div class="box2">Box2c</div>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header><div class="container">
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, libero? Dignissimos assumenda dolore in provident corporis perspiciatis, temporibus modi minus nostrum nesciunt odio, soluta dolorum amet beatae laborum voluptatum quo.</div>
+    <div class="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quas, officia sapiente enim, eligendi alias eos molestias inventore minus possimus beatae, natus est sunt culpa! Beatae molestias porro laborum obcaecati.</div>
     </div>
 </body>
 </html>
