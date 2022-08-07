@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 50vh;
+        }
+        .box{
+            display: inline;
+            border: 2px solid black;
+            /* transform-origin: center; */
+            /* transform: translate(130px, 56px) rotate(45deg); */
+            /* transform: scale(4,6); */
+            /* transform: skew(0deg, 10deg); */
+        }
+        img{
+            /* height: 230px; */
+            width: 245px;
+            height: 240px; 
+            /* transition-property: width 2s; */
+            /* transition-duration: 3s;
+            transition-timing-function: ease-in; */ 
+            /* transition: width 2s cubic-bezier(.6,.04,.98,.34) height 2s ease-in; */
+            transition: width 2s ease-in, height 2s ease-in;
+        }
+        img:hover {
+            width: 300px;
+            height: 300px;
+            /* transition: width 2s ease-in height 2s ease-in;  */
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1594136662380-3580470c089d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+        </div>
+    </div>
+</body>
+</html>
