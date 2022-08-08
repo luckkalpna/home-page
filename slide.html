@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 150vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/Someflowers.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .progress{
+            background-color: rgb(231, 54, 113);
+            height: 3px;
+            animation: load 1s ease-in-out 1;
+        }
+        header{
+            background-color: rgb(192, 47, 197);
+            height: 100px;
+        }
+        ul{
+            padding: 37px;        
+        }
+        li{
+            list-style: none;
+            color: white;
+            display: inline;
+            padding: 0 20px;
+        }
+        /* main{
+            height: 800px;
+            background-color: rgb(167, 9, 140);
+        } */
+        @keyframes load {
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 90vw;
+            }
+            100%{
+                width: 100vw;
+            }
+            
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+        @keyframes slide1 {
+            0%{
+                transform: translate(-8vw);
+            }
+            100%{
+                transform:translate(10vw);
+            }
+            
+        }
+        @keyframes slide2 {
+            0%{
+                transform: translate(-4vw);
+            }
+            100%{
+                transform:translate(15vw);
+            }
+            
+        }
+        @keyframes slide3 {
+            0%{
+                transform: translate(0vw);
+            }
+            100%{
+                transform:translate(25vw);
+            }
+            
+        }
+        @keyframes slide4 {
+            0%{
+                transform: translate(4vw);
+            }
+            100%{
+                transform:translate(30vw);
+            }
+            
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        .img1{
+            width: 300px;
+            transform: translate(-8vw); 
+            animation: slide1 50s backwards infinite;
+        }
+        .img1:hover{
+            width: 400px;
+        }
+        .img2{
+            width: 600px;
+            transform: translate(-4vw); 
+            animation: slide2 50s backwards infinite;
+        }
+        .img2:hover{
+            width: 700px;
+        }
+        .img3{
+            width: 400px;
+            transform: translate(0vw);
+            animation: slide3 50s backwards infinite;
+        }
+        .img3:hover{
+            width: 500px;
+        }
+        .img4{
+            width: 600px;
+            transform: translate(4vw);
+            animation: slide4 50s backwards infinite;
+        }
+        .img4:hover{
+            width: 700px;
+        }
+        /* .img4{
+            transform: translate(8vw);
+        } */
+        .slider{
+            margin: 15em 0;
+            /* border: 2px solid red; */
+            /* background-color: aqua; */
+            height: 400px;
+            /* width: 100%; */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <img src="teddy.jpg" alt=""> -->
+        <div class="slider">
+            <img class="img1" src="img/slide-flowers.jpg" alt="">
+            <img class="img2" src="img/slide2-images.jpg" alt="">
+            <img class="img3" src="img/slide4.jpg" alt="">
+            <img class="img4" src="img/slide5.jpg" alt="">
+        </div>
+    </main>
+</body>
+</html>
