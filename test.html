@@ -4,147 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".pandastyle.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Test</title>
-    <style>
-        *, *::after, *::before{
-            box-sizing: border-box;
-        }
-        .panda{
-            position: relative;
-            width: 200px;
-            margin: 50px auto;
-        }
-        body{
-            background-color: #cc3367;
-            text-align: center;
-            font-family: 'Roboto',sans-serif;
-        }
-        .face{
-            position: relative;
-            margin: 50px auto;
-            box-shadow: 0 10px 15px rgba(0,0,0,0.15);
-            z-index: 50;
-            height: 200px;
-            width: 200px;
-            border-radius: 100%;
-            background-color: white;
-        }
-        .ear, .ear::after{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            background: #000;
-            z-index: 5;
-            border: 10px solid white;
-            left: -15px;
-            top: -15px;
-            border-radius: 100%;
-        }
-        .ear::after{
-            content: "";
-            left: 125px;
-        }
-        .eye-shade{
-            background: #000;
-            width: 50px;
-            height: 80px;
-            margin: 10px;
-            position: absolute;
-            top: 35px;
-            left: 25px;
-            transform: rotate(220deg);
-            border-radius: 25px/20px 30px 35px 40px;
-        }
-        .eye-shade.right{
-            transform: rotate(140deg);
-            left: 105px;
-        } 
-        .eye-white{
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border-radius: 100%;
-            background: white;
-            z-index: 500;
-            left: 40px;
-            top: 80px;
-            overflow: hidden;
-        }
-        .eye-white.right{
-            right: 40px;
-            left: auto;
-        }
-        .eye-ball{
-            position: absolute;
-            width: 0px;
-            height: 0px;
-            left: 15px;
-            top: 25px;
-            max-width: 10px;
-            max-height: 10px;
-            -webkit-transition: 0.1s;
-            transition: 0.20s;
-        }
-        .eye-ball::after{
-            content: "";
-            background: #000;
-            position: absolute;
-            border-radius: 100%;
-            right: 0;
-            bottom: 0;
-            width: 20px;
-            height: 20px;
-        }
-    </style>
 </head>
 <body>
-    <div class="panda">
-        <div class="ear"></div>
-        <div class="face">
-            <div class="eye-shade"></div>
-            <div class="eye-white">
-                <div class="eye-ball"></div>
-            </div>
-            <div class="eye-shade right"></div>
-            <div class="eye-white right">
-                <div class="eye-ball"></div>
-            </div>
-            <div class="nose"></div>
-            <div class="mouth"></div>
-        </div>
-    </div>
-    <script>
-        // (function() {
-        //   $('#password').focusin(function(){
-        //     $('form').addClass('up')
-        //   });
-        //   $('#password').focusout(function(){
-        //     $('form').removeClass('up')
-        //   });
-    
-        //   // validation
-    
-    
-        //   $('.btn').click(function(){
-        //     $('form').addClass('wrong-entry');
-        //       setTimeout(function(){ 
-        //         $('form').removeClass('wrong-entry');
-        //       },3000 );
-        //   });
-        // });
-        // Panda Eye move
-        $(document).on( "mousemove", function( event ) {
-            var dw = $(document).width() / 15;
-            var dh = $(document).height() / 15;
-            var x = event.pageX/ dw;
-            var y = event.pageY/ dh;
-            $('.eye-ball').css({
-              width : x,
-              height : y
-            });
-          });
-      </script>
+    #talkbubble {
+        width: 120px;
+        height: 80px;
+        background: red;
+        position: relative;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+      }
+      #talkbubble:before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        top: 26px;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-right: 26px solid red;
+        border-bottom: 13px solid transparent;
+      }
 </body>
 </html>
