@@ -29,7 +29,7 @@
         }
 
         body {
-            background-color: rgb(214, 211, 209);
+            background-color: rgb(255, 255, 255);
         }
 
         .content {
@@ -47,6 +47,7 @@
             border-radius: 20px;
             height: 100vh;
             width: 100vw;
+            box-shadow: 0 0 8px 0;
         }
 
         .profile {
@@ -235,30 +236,81 @@
             height: 50px;
             width: 50px;
         }
-        .box{
+
+        .box {
             margin: auto;
             /* border: 1px solid black; */
             font-family: Roboto;
         }
-        .hello{
+
+        .hello {
             font-size: 14px;
         }
-        #text{
+
+        #text {
             font-size: 40px;
             margin: 5px 0 5px 0;
         }
-        p{
+
+        p {
             font-weight: 300;
             color: darkgray;
             margin-top: 1.7em;
         }
-        ul li{
+
+        ul li {
             margin-top: 2em;
             list-style: none;
             color: darkgray;
         }
-        a{
+
+        a {
             color: grey;
+        }
+
+        /* ################about section################ */
+        .about_section {
+            margin-top: 20em;
+            /* border: 5px solid red; */
+            height: 50vh;
+        }
+
+        .about {
+            /* border: 1px solid green; */
+            float: left;
+            padding-left: 8em;
+            width: 30vw;
+        }
+
+        .about h4 {
+            font-family: "Heebo", sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+        }
+
+        .about p {
+            line-height: 26px;
+        }
+
+        .col-lg-6 {
+            flex: 0 0 50%;
+            max-width: 400px;
+            border: 1px solid black;
+            float: right;
+            padding-right: 20em;
+        }
+
+        .tools_expert {
+            padding: 3px 0px 0px 0px;
+        }
+        .skill_main{
+            margin: auto;
+            line-height: 36px;
+        }
+        .skill_main h4{
+            font-family: "Heebo", sans-serif;
+            font-weight: bold;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -290,39 +342,86 @@
                         <div class="box_text">
                             <h5 class="hello">Hello Everyone,</h5>
                             <h1 id="text">I AM KALPNA</h1>
-                                <p>Sophomore CSE Undergraduate. Front-end Web and Android Dev. Inquisitive. Keen.
-                                </p>
-                                <ul class="list basic_info">
-                                    <li style="font-family: cursive; color: darkgoldenrod;"><b>
+                            <p>Sophomore CSE Undergraduate. Front-end Web and Android Dev. Inquisitive. Keen.
+                            </p>
+                            <ul class="list basic_info">
+                                <li style="font-family: cursive; color: darkgoldenrod;"><b>
                                         <a href="https://drive.google.com/file/d/1J6Qev91KaWI4D7hEfI1Ay8ID_jUnsSiw/view?usp=sharing"
-                                                    target="_blank"> Click here to see my Resume.</a>
-                                                </b>
-                                    </li>
-                                </ul>
-                                <ul class="list personal_social">
-                                    <li><a href="https://www.linkedin.com/in/garima-singh-34042a177/?msgConversationId=6572262943008882688&amp;msgOverlay=true">
-                                        <i class="fi fi-linkedi-in"></i></a>
-                                    </li>
-                                    <li><a href="https://twitter.com/GarimaS93930012">
+                                            target="_blank"> Click here to see my Resume.</a>
+                                    </b>
+                                </li>
+                            </ul>
+                            <ul class="list personal_social">
+                                <li><a
+                                        href="https://www.linkedin.com/in/garima-singh-34042a177/?msgConversationId=6572262943008882688&amp;msgOverlay=true"><i
+                                            class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/GarimaS93930012">
                                         <i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/garimasingh128">
+                                </li>
+                                <li><a href="https://github.com/garimasingh128">
                                         <i class="fa fa-github"><i></a>
-                                    </li>
-                                    <li><a href="https://www.facebook.com/garima1208">
+                                </li>
+                                <li><a href="https://www.facebook.com/garima1208">
                                         <i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="https://www.instagram.com/ggaarriimmaaa/">
+                                </li>
+                                <li><a href="https://www.instagram.com/ggaarriimmaaa/">
                                         <i class="fa fa-instagram"></i></a>
-                                    </li>
-                                </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
     </div>
-        </section>
+    </section>
     </div>
+    <div class="about_section">
+        <div class="about">
+            <h4>ABOUT MYSELF</h4>
+            <p style="color: #6a0dad; font-family: cursive;">Hi there! I'm Kalpna.
+                I belong from Uttar Pradesh, India. I currently work as a Sophomore student at National
+                Institute of Technology, Patna. I have one year experience at creating software, mobile
+                apps and websites for both myself, and for personal projects. I have experience in
+                programming in many different languages such as C, HTML, Javascript, Python, Java and
+                PHP, however some of my favourite projects involve working in Android Studio and Visual
+                Studio. I am currently enrolled in four years Under Graduate course of Computer Science
+                and Engineering. I am constantly working for development of my skills.</p>
+        </div>
+        <div class="col-lg-6">
+            <div class="tools_expert" style="margin:auto;">
+                <div class="skill_main">
+                    <div class="skill_item">
+                        <h4>ANDROID STUDIO :- <span class="counter">60</span>%</h4>
+
+                        <progress value="60" max="100" style="size: 170px;">
+                        </progress>
+                    </div>
+                    <div class="skill_item">
+                        <h4>GIT, GITHUB, VCS CONTROL :-<span class="counter">50</span>%</h4>
+
+                        <progress value="50" max="100" style="size: 170px;">
+                        </progress>
+                    </div>
+                    <div class="skill_item">
+                        <h4>COMPETITIVE PROGRAMMING :- <span class="counter">40</span>%</h4>
+
+                        <progress value="40" max="100" style="size: 170px;">
+                        </progress>
+                    </div>
+                    <div class="skill_item">
+                        <h4>VISUAL STUDIO :- <span class="counter">40</span>%</h4>
+
+                        <progress value="40" max="100" style="size: 170px;">
+                        </progress>
+                    </div>
+                    <div class="skill_item">
+                        <h4>BRACKETS FOR WEB DEVELOPMENT :- <span class="counter">70</span>%</h4>
+
+                        <progress value="70" max="100" style="size: 170px;">
+                        </progress>
+                    </div>
+                </div>
 </body>
 
 </html>
