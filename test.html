@@ -7,35 +7,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test</title>
   <style>
-    .about_section{
-      border: 5px solid red;
-      height: 50vh;
-    }
-    .about{
-      border: 1px solid green;
-      float: left;
-      padding-left: 5em;
-    }
-    .per{
+    .mytabs_area {
+      height: 80vh;
       border: 1px solid black;
-      float: right;
-      padding-right: 15em;
+      margin-top: 15em;
+      background-image: linear-gradient(to bottom right, rgb(73, 10, 73), rgb(228, 168, 228));
+      background-image: url();
+    }
+
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .tabs_inner .nav.nav-tabs li a {
+      margin: 0px;
+      line-height: 50px;
+      border-radius: 5px;
+      padding: 0px 40px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      /* border: 1px solid #9ab5f5; */
+      /* background: rgba(255, 255, 255, 0.1); */
+    }
+
+    .tabs_inner .nav.nav-tabs {
+      text-align: center;
+      list-style: none;
+    }
+
+    .tabs_inner .nav.nav-tabs li {
+      list-style: none;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 8px;
+      border: 1px solid #9ab5f5;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-tabs .nav-item {
+      list-style: none;
+      text-decoration: none;
+      margin-bottom: -1px;
+      margin-top: 50px;
+    }
+    #myTabContent{
+      border: 1px solid black;
+    }
+    img{
+      margin-left: 42em;
+    }
+    .d-flex{
+      border: 1px solid black;
+      width: 50vw;
+    }
+    .media-body{
+      border: 1px solid black;
+      margin-left: 700px;
+      margin-top: -75px;
     }
   </style>
-  </head>
-  <body>
-    <div class="about_section">
-      <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt.</div>
-      <div class="per">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, quam!</div>
+</head>
+
+<body>
+  <section class="mytabs_area">
+    <div class="bg">
+      <img src="https://i.ibb.co/sy0SPRV/Rectangle-2420.png" class="rec" alt="Rectangle-2420" border="0">
+    <!-- <img src="https://i.ibb.co/sy0SPRV/Rectangle-2420.png" class="rec" alt="Rectangle-2420" border="0"> -->
+    <div class="container">
+      <!-- <img src="https://i.ibb.co/sy0SPRV/Rectangle-2420.png" class="rec" alt="Rectangle-2420" border="0"> -->
+      <div class="tabs_inner">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">My Education</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </body>
-  <h4>ABOUT MYSELF</h4>
-            <p style="color: #6a0dad; font-family: cursive;">Hi there! I'm Kalpna.
-                I belong from Uttar Pradesh, India. I currently work as a Sophomore student at National
-                Institute of Technology, Patna. I have one year experience at creating software, mobile
-                apps and websites for both myself, and for personal projects. I have experience in
-                programming in many different languages such as C, HTML, Javascript, Python, Java and
-                PHP, however some of my favourite projects involve working in Android Studio and Visual
-                Studio. I am currently enrolled in four years Under Graduate course of Computer Science
-                and Engineering. I am constantly working for development of my skills.</p>
-    
+    </div>
+    <div class="tab-content" id="myTabContent" style="margin-top: 60px;">
+      <!-- <img src="https://i.ibb.co/sy0SPRV/Rectangle-2420.png" class="rec" alt="Rectangle-2420" border="0"> -->
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="d-flex">
+                <p style="margin-left: 530px;">March 2016</p>
+              </div>
+              <div class="media-body">
+                <h4>Completed 10th.</h4>
+                <p>Hartmann College <br>Bareilly, UP, India</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="d-flex">
+                <p style="margin-left: 530px;">March 2018</p>
+              </div>
+              <div class="media-body">
+                <h4>Completed 12th</h4>
+                <p>BBL Public School <br>Bareilly, UP, India</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="d-flex">
+                <p style="margin-left: 480px;">May 2018 to present</p>
+              </div>
+              <div class="media-body">
+                <h4>Student in Bachelor of Technology</h4>
+                <p>National Institute of Technology <br>Patna, Bihar, India</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
