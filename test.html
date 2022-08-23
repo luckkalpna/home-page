@@ -11,25 +11,53 @@
             margin: 0;
             padding: 0;
         }
-        .msg{
+        body{
+            background: lightgray;
+        }
+        .flex{
             display: flex;
             margin-top: 2em;
             margin-left: 29em;
-            border: 2px solid #e63946;
-            background: #e63946;
-            border-radius: 5px;
+            /* border: 2px solid #e63946; */
+            border-radius: 10px;
             width: 30vw;
             height: 10vh;
         }
         .icon{
-            border: 1px solid black;
+            border: 1px solid white;
+            border-radius: 10% 0 0 10%;
             background: white;
             width: 5vw;
+        }
+        .icon img{
+            margin-top: .7em;
+            margin-left: .7em;
+            height: 6vh;
+            width: 3vw;
+        }
+        .msg{
+            width: 25vw;
+            border: 1px solid #e63946;
+            border-radius: 0 8px 8px 0;         
+            background: #e63946;
+        }
+        .msg p{
+            margin-top: .7em;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            font-family: 'Heebo', sans-serif;
         }
     </style>
 </head>
 <body>
-    <div class="msg">
-        <div class="icon">df</div>
+    <div class="flex">
+        <div class="icon">
+            <img src="https://i.postimg.cc/c193kXB3/emoji-removebg-preview-2.png" alt="image" border="0">
+        </div>
+        <div class="msg">
+            <p>SEND ME SOME LOVE</p>
+        </div>
     </div>
     </body>
